@@ -2,13 +2,13 @@ Raspberry Pi (3/4B) to Pixhawk 2.4.8
 
 
 
-* Connect pixhawk and RPi as shown above. 
+* Connect pixhawk and RPi. 
 * Follow the link for Connecting RPi (Headless mode) using Ethernet cable.(Windows)
 https://www.youtube.com/watch?v=AJ7skYS5bjI&t=328s
 * Follow the link for Connecting RPi (Headless mode) using Ethernet cable.(Ubuntu)
 https://www.youtube.com/watch?v=KjghxhS_wcM
 
-* After opening putty, login using ip address (in my case 10.42.0.172) or pi@raspberrypi.local and port number “22”. Don’t forget to enable X11 forwarding.  SSH->X11-> Click check box “Enable X11 forwarding option”  and Click “Open”
+* After opening putty, login using ip address (in my case 10.42.0.172) or pi@raspberrypi.local and port number â€œ22â€. Donâ€™t forget to enable X11 forwarding.  SSH->X11-> Click check box â€œEnable X11 forwarding optionâ€  and Click â€œOpenâ€
 
 
 * 
@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=KjghxhS_wcM
 If you are using ubuntu, you can login from Terminal(Ctrl+Alt+T)
 
 
-“ssh pi@raspberrypi.local”
+â€œssh pi@raspberrypi.localâ€
 
 * Login id: pi, password: raspberry
 * Once logged in it will change to pi@raspberry:
@@ -25,7 +25,7 @@ If you are using ubuntu, you can login from Terminal(Ctrl+Alt+T)
 
 Enter the following commands sequentially
 
-* sudo raspi-config, Enable serial connection in “Interface option”
+* sudo raspi-config, Enable serial connection in â€œInterface optionâ€
 * sudo apt-get update
 * sudo apt-get upgrade
 * sudo apt-get install python-pip
@@ -44,11 +44,11 @@ It will get into root mode.
 
 Considering Pixhawk and Raspberry Pi are connected. After entering the following command, it will establish connection to drone.
 
-mavproxy.py –master=/dev/ttyS0
+mavproxy.py â€“master=/dev/ttyS0
 
-We can change mode by typing “mode STABILIZE” or “mode LOITRE”
+We can change mode by typing â€œmode STABILIZEâ€ or â€œmode LOITREâ€
 
-then enter “arm throttle”
+then enter â€œarm throttleâ€
 
 Now propellers should rotate.
 
